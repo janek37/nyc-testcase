@@ -1,0 +1,11 @@
+This is an example of a bug in instabul/nyc.
+
+1. `npm install`
+2. `npm run coverage`
+
+Effect: `src/foo.ts` is ignored in coverage.
+
+3. Change `nyc` version in `package.json` to 14.1.1
+4. Repeat steps 1 and 2
+
+Effect: `src/foo.ts` is not ignored anymore.
